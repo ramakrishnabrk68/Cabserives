@@ -1,0 +1,26 @@
+.main-slds-main-box{
+   background-color: cadetblue;
+}
+.box{
+    background-color:black;
+}
+.btncss{
+    background-color: black;
+    
+}
+.slds-booKing{
+    font-size: 25px;
+    border: none;
+    margin-left: -20px;
+}
+.slds-reschedule{
+    font-size: 25px;
+    border: none;
+    margin-left: -20px;
+}
+.slds-cancelled{
+    font-size: 25px;
+    border: none;
+    margin-left: -20px;
+}
+

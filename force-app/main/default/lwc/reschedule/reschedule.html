@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-p-around_medium">
+        <lightning-card title="Reschedule Meeting" icon-name="standard:event">
+            <!-- <c-reshedulechild></c-reshedulechild> -->
+            <!-- // ✅ Datatable to display existing Reschedule records -->
+            <lightning-button label="Refresh" icon-name="utility:refresh"
+                variant="brand" class="slds-m-bottom_small"
+                onclick={handleRefreshbtn}></lightning-button>
+            <div class="slds-p-horizontal_medium">
+                <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}
+                    hide-checkbox-column
+                    draft-values={draftValues}
+                    onrowaction={handleRowAction}
+                    show-row-number-column>
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+    </div>
+</template>

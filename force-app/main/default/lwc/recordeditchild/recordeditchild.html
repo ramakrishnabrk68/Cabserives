@@ -1,0 +1,36 @@
+<template>
+    <div class="Container-Box" >
+        <lightning-record-edit-form
+            object-api-name="Booking__c"
+            onsuccess={handleSuccess}>
+            <lightning-messages></lightning-messages>
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field
+                field-name="Driver__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="New_customer__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="vechical__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Booking_Date__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Booking_Time__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Status__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Pickup_Location__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Drop_Location__c"></lightning-input-field>
+            <!-- button here  -->
+            <lightning-button class="slds-m-top_small" variant="brand"
+                type="reset" name="cancel" label="Cancel"
+                onclick={handlereset}></lightning-button>
+            <lightning-button class="slds-m-top_small" variant="brand"
+                type="submit" name="save" label="Book Now"
+                onclick={saveBooking}></lightning-button>
+            <lightning-button class="slds-m-top_small" variant="brand"
+                type="save" name="save" label="Save&Continue"
+                onclick={updateBooking}></lightning-button>
+        </lightning-record-edit-form>
+    </div>
+</template>

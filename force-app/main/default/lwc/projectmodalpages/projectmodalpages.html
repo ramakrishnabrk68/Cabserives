@@ -1,0 +1,182 @@
+<template>
+    <lightning-card title="Cab Booking" icon-name="custom:custom63">
+        <div class="slds-p-horizontal_medium slds-mainContainer">
+            <div class="slds-m-bottom_small slds-text-body_regular">
+                <h1>Cabs is a serives are available</h1>
+            </div>
+            <div class="slds-grid slds-wrap slds-flex-container">
+                <div class="slds-col slds-size_4-of-12">
+                    <img src={booKing}
+                        alt="Cab Booking"
+                        class="slds-image"
+                        onclick={handleClicknew}
+                        style="height: 200px; width: 200px;" />
+                    <a
+                        href="https://orgfarm-abc74b2f7f-dev-ed.develop.lightning.force.com/lightning/o/Booking__c/new?count=1&backgroundContext=%2Flightning%2Fpage%2Fhome"
+                        onclick={handleClicknew}>
+                        Just Now clicK here
+                    </a><br>
+                    <span class="slds-box slds-box_small slds-booKing"> Bookings
+                        Record</span>
+                </div>
+                <div class="slds-col slds-size_4-of-12">
+                    <img src={Rescheduled}
+                        alt="Reschedule"
+                        class="slds-image"
+                        onclick={handleClicrs}
+                        style="height: 200px; width: 200px;" />
+                    <a
+                        href="https://orgfarm-abc74b2f7f-dev-ed.develop.lightning.force.com/lightning/o/Reschedule__c/new?count=2&backgroundContext=%2Flightning%2Fpage%2Fhome"
+                        onclick={handleClicrs}>
+                        Reschedule Now clicK here
+                    </a><br>
+                    <span
+                        class="slds-box slds-box_small slds-reschedule">Reschedule
+                        Record</span>
+                </div>
+                <div class="slds-col slds-4-of-12">
+                    <img src={Cancelled}
+                        alt="Cancelled"
+                        class="slds-image"
+                        onclick={handleClicl}
+                        style="height: 200px; width: 200px;" /><br>
+                    <span
+                        class="slds-box slds-box_small slds-cancelled">Cancelled
+                        Record</span>
+                </div>
+
+            </div>
+        </div>
+    </lightning-card>
+</template>
+
+<!-- modal component record pages cab booKing servies -->
+<!-- <div class="container-box">
+        <lightning-card title="Cab Booking" icon-name="custom:custom63">
+            <div class="slds-p-horizontal_medium">
+                <p class="slds-m-bottom_small">This component demonstrates
+                    modal pop-up for cab booking services.</p>
+                <button class="slds-button slds-button_brand  btncss "
+                    onclick={handleClick}>Open Modal</button>
+                    <lightning-card title="Cab Booking"
+                                        class="box1"
+                                        icon-name="custom:custom63">
+                                        <div class="slds-col">
+                                            <div class="slds-m-bottom_medium">
+                                               
+                                            </div> -->
+<!-- <button
+                                                class="slds-button slds-button_neutral"
+                                                onclick={handleClickbtn}>
+                                                Book Now</button> -->
+<!-- </div>
+                                    </lightning-card>
+            </div>
+            <template if:true={isModalOpen}>
+                <section role="dialog" tabindex="-1" aria-modal="true"
+                    aria-labelledby="modal-heading-01"
+                    class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container slds-main-box">
+                        <button
+                            class="slds-button slds-button_icon slds-modal__close"
+                            onclick={handlecancelbtn}>
+                            <lightning-icon icon-name="utility:close"
+                                size="small"
+                                alternative-text="close"></lightning-icon>
+                            <span class="slds-assistive-text">Cancel and
+                                close</span>
+                        </button> -->
+<!-- Header section part -->
+<!-- <div class="slds-modal__header">
+                            <h1 id="modal-heading-01"
+                                class="slds-modal__title slds-hyphenate"
+                                tabindex="-1">Cab
+                                services</h1>
+                        </div>
+                        <div class="slds-modal__content slds-p-around_medium"
+                            id="modal-content-id-1"> -->
+<!-- button parent to child record calling to buttons -->
+<!-- <div class="slds-main-box">
+                                <p
+                                    class="slds-text-body_regular slds-m-bottom_small">Book
+                                    your cab now or reschedule/cancel your
+                                    booking</p> -->
+<!--  grid system for modal content -->
+<!-- <div class="slds-grid slds-gutters">
+                                    <lightning-card title="Cab Booking"
+                                        class="box1"
+                                        icon-name="custom:custom63">
+                                        <div class="slds-col">
+                                            
+                                            </div> -->
+<!-- <button
+                                                class="slds-button slds-button_neutral"
+                                                onclick={handleClickbtn}>
+                                                Book Now</button> -->
+<!-- </div>
+                                    </lightning-card>
+                                    <lightning-card title="Reschedule"
+                                        class="box2">
+                                        <div class="slds-col">
+                                            <div class="slds-m-top_medium">
+                                                
+                                            </div> -->
+<!-- <button
+                                                class="slds-button slds-button_neutral"
+                                                onclick={handleClicrs}>Reschedule</button> -->
+<!-- </div>
+                                    </lightning-card>
+                                    <lightning-card title="Cancel Booking"
+                                        class="box3"> -->
+<!-- <div class="slds-col">
+                                            <div class="slds-m-bottom_medium">
+                                                <img src={Cancelled}
+                                                    alt="Cancel Booking"
+                                                    class="slds-image"
+                                                    style="height: 75px; width: 75px;" />
+                                                <a
+                                                    href="Cancel Booking clicK here"
+                                                    onclick={handleClickbtncl}>
+                                                    Cancel Now clicK here
+                                                </a>
+                                            </div> -->
+<!-- <button
+                                                class="slds-button slds-button_neutral"
+                                                onclick={handleClickbtncl}>Cancel</button> -->
+<!-- </div>
+                                    </lightning-card>
+                                </div> -->
+<!-- <template if:true={showbtns}>
+                                    <c-pagination></c-pagination>
+                                </template> -->
+
+<!-- <template if:true={showbtnsrs}>
+                                    <p
+                                        class="slds-text-body_regular slds-m-bottom_small">Reschedule
+                                        your cab booking</p>
+                                </template> -->
+<!-- <button class="slds-button slds-button_neutral"
+                                    onclick={handleClickbtncl}>Cancel</button>
+                                <template if:true={showbtnscl}>
+                                    <p
+                                        class="slds-text-body_regular slds-m-bottom_small">Cancel
+                                        your cab booking</p>
+                                </template>  -->
+<!-- </div>
+                        </div> -->
+<!-- footer section part -->
+<!-- <div class="slds-modal__footer">
+                            <button class="slds-button slds-button_neutral"
+                                aria-label="Cancel and close"
+                                onclick={handlecancelbtn}>Cancel</button>
+                            <button
+                                class="slds-button slds-button_brand">Save</button>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="slds-backdrop slds-backdrop_open"
+                    role="presentation"></div>
+            </template>
+        </lightning-card>
+    </div> -->

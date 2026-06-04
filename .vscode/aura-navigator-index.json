@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "timestamp": 1780554708631,
+  "components": [],
+  "apex": [
+    [
+      "banKpagesclass",
+      {
+        "className": "banKpagesclass",
+        "filePath": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\banKpagesclass.cls",
+        "methods": [
+          {
+            "name": "getaccountmethod",
+            "line": 8,
+            "returnType": "list<Account>",
+            "file": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\banKpagesclass.cls",
+            "accessModifier": "public",
+            "isStatic": true,
+            "isAuraEnabled": true
+          },
+          {
+            "name": "clientmethod",
+            "line": 15,
+            "returnType": "list <Client__c>",
+            "file": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\banKpagesclass.cls",
+            "accessModifier": "public",
+            "isStatic": true,
+            "isAuraEnabled": true
+          },
+          {
+            "name": "bookingmethod",
+            "line": 21,
+            "returnType": "List<Booking__c>",
+            "file": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\banKpagesclass.cls",
+            "accessModifier": "public",
+            "isStatic": true,
+            "isAuraEnabled": true
+          }
+        ],
+        "usedByComponents": []
+      }
+    ],
+    [
+      "rescheduleclass",
+      {
+        "className": "rescheduleclass",
+        "filePath": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\rescheduleclass.cls",
+        "methods": [
+          {
+            "name": "reschedulemethod",
+            "line": 2,
+            "returnType": "list<Reschedule__c>",
+            "file": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\rescheduleclass.cls",
+            "accessModifier": "public",
+            "isStatic": true,
+            "isAuraEnabled": true
+          }
+        ],
+        "usedByComponents": []
+      }
+    ]
+  ],
+  "apexMethodCalls": [
+    [
+      "banKpagesclass",
+      [
+        {
+          "callerClass": "banKpagesclass",
+          "callerLine": 2,
+          "callerFile": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\banKpagesclass.cls",
+          "targetClass": "banKpagesclass",
+          "targetMethod": "getclientmethod"
+        },
+        {
+          "callerClass": "banKpagesclass",
+          "callerLine": 30,
+          "callerFile": "d:\\LWC\\Cab Servies project\\cabserviesmini\\force-app\\main\\default\\classes\\banKpagesclass.cls",
+          "targetClass": "banKpagesclass",
+          "targetMethod": "recordEditMethod"
+        }
+      ]
+    ],
+    [
+      "rescheduleclass",
+      []
+    ]
+  ]
+}

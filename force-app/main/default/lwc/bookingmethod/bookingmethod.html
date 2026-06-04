@@ -1,0 +1,45 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="Cab Booking Services">
+            <div class="slds-grid slds-wrap">
+                <div
+                    class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_8-of-12">
+                    <p> Welcome to our Cab Booking Services! We are delighted to
+                        have you here. Our platform offers a seamless and
+                        convenient way to book your cab rides with just a few
+                        clicks.
+                        Whether we look forward to serving you!
+                    </p>
+                </div>
+            </div>
+
+            <!-- key-field must be "Id" (capital I) to match Salesforce record Id -->
+            <!-- onrowaction wires the row-level Delete action to handleRowAction -->
+            <lightning-datatable
+                key-field="Id"
+                data={data}
+                columns={columns}
+                suppress-bottom-bar
+                draft-values={draftValues}
+                onsave={handleSave}
+                onrowaction={handleRowAction}
+                show-row-number-column>
+            </lightning-datatable>
+
+            <!-- <lightning-button
+                class="slds-m-top_small"
+                variant="neutral"
+                type="button"
+                label="Cancel"
+                onclick={handlecancel}>
+            </lightning-button>
+            <lightning-button
+                class="slds-m-top_small"
+                variant="brand"
+                type="button"
+                label="Save"
+                onclick={handlesavebtn}>
+            </lightning-button> -->
+        </lightning-card>
+    </div>
+</template>

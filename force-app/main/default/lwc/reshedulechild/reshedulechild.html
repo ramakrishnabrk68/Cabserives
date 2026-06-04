@@ -1,0 +1,40 @@
+<template>
+    <!-- // ✅ Form to create a new Reschedule record -->
+    <div class="slds-m-bottom_medium">
+        <lightning-record-edit-form
+            object-api-name="Reschedule__c"
+            onsuccess={handleSuccess}>
+            <lightning-messages></lightning-messages>
+            <lightning-input-field
+                field-name="Name"></lightning-input-field>
+            <lightning-input-field
+                field-name="Booking__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="vechical__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Driver__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="OldRescheduleDate__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="NewRescheduleDate__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Reschedule_Reason__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Reschedule_Status__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Approved_By__c"></lightning-input-field>
+            <lightning-input-field
+                field-name="Rejected_By__c"></lightning-input-field>
+
+            <div class="slds-m-top_medium">
+                <lightning-button type="submit" label="Reschedule"
+                    class="slds-m-right_small"
+                    onclick={handleSubmit}></lightning-button>
+                <lightning-button type="reset"
+                    label="Cancel" onclick={handlecancel}></lightning-button>
+            </div>
+
+        </lightning-record-edit-form>
+    </div>
+
+</template>
