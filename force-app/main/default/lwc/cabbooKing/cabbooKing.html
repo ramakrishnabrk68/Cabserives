@@ -16,14 +16,57 @@
             <div class="slds-continer">
                 <lightning-tabset active-tab-value="two">
                     <lightning-tab label="Home" value="one">
-                        One Content !gi
+                        <div class="scroll-container">
+                            <span class="scroll-text">
+                                <img src={booKing}
+                                    alt="Cab Booking"
+                                    class="slds-image"
+                                    onclick={handleClicknew}
+                                    style="height: 200px; width: 200px;" />
+                                Welcome to Cab Servies - Your Trusted Ride
+                                Companion! <br>
+                                At Cab Servies, we are dedicated to providing
+                                you with a seamless and reliable transportation
+                                experience...!
+                            </span>
+                        </div>
+                        
+                        <div class="slds-size_3-of-4">
+                            <div
+                                class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Basic
+                                Carousel
+                                <lightning-carousel>
+                                    <lightning-carousel-image
+                                        src={booKing}
+                                        header="Cab Servies"
+                                        style="height: 75px; width: 75px;"
+                                        description="Your Trusted Ride Companion!"
+                                        href="javascript:void(0);">
+                                    </lightning-carousel-image>
+                                    <lightning-carousel-image
+                                        src={Rescheduled}
+                                        header=" Rescheduled here"
+                                        description="Your Trusted Ride Companion!"
+                                        style="height: 75px; width: 75px;"
+                                        href="javascript:void(0);">
+                                    </lightning-carousel-image>
+                                    <lightning-carousel-image
+                                        src={carouselimage}
+                                        header="carouselimage"
+                                        style="height: 75px; width: 75px;"
+                                        description="Your Trusted Ride Companion!"
+                                        href="javascript:void(0);">
+                                    </lightning-carousel-image>
+                                </lightning-carousel>
+                            </div>
+                        </div>
                     </lightning-tab>
                     <lightning-tab label="About us" value="two"
                         title="2nd tab extended title">
                         <div class="heading"><h1>About us</h1></div>
                         <!-- another grid  -->
                         <div class="slds-grid slds-wrap">
-                            <lightning-card class="slda-bgcolor">
+                            <lightning-card class="slds-bgcolor">
                                 <div
                                     class="slds-col slds-size_6-of-12 slds-image">
                                     <img src={andhrapradesh}
